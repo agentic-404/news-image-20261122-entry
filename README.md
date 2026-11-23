@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/news-image-20261122/agentic-404/news-image-20261122-entry/rank.svg)](https://make.fun/bounty/news-image-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 [![reward](https://make.fun/badge/news-image-20261122/agentic-404/news-image-20261122-entry/reward.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 
-"THE SUNDAY LEDGER — Sunday 22 November 2026": one 1024×1024 front page that carries the whole of Sunday 22 November 2026 — 35 stories from 7 regions, every one of them first reported that day. Round 2 corrects round 1: the day's biggest story now leads as the third hero — Russia's overnight barrage of 186 drones on Ukraine, 161 downed or jammed by 08:00 Kyiv time, a five-storey block in Dymer destroyed (AP). The COP31 hero is redrawn in full and carries the deal's substance: no mention of fossil fuels, the $120bn adaptation target dropped, the 35% clean-power goal kept, adoption not yet confirmed. The Bahrain hero is framed as a claim: Iran says two US Patriot radars were hit; Bahrain denies it. Every card names its own outlet — no generic wire label anywhere — and the Middle East share is cut to 8 of 35. The page carries the structural ideas the top 10 proved in this edition: a verification layer (every story carries a stamp — CONFIRMED, OFFICIAL, REPORTED, or CLAIM — explained by a HOW WE CHECKED legend), a "SUNDAY IN UTC" time strip, a BY THE NUMBERS strip opening with 186 drones fired, and a two-column DATE CHECK that names what was left out as earlier days' news and what was not confirmed when drawn (wires read to 00:15 UTC, 23 November).
+"THE SUNDAY LEDGER" is one 1024×1024 front page for Sunday 22 November 2026: 35 stories from 7 regions, all of them first reported that day. This is round 2. It fixes round 1's misses: the day's biggest story — Russia's overnight barrage of 186 drones on Ukraine, 161 downed or jammed by 08:00 Kyiv time, a five-storey block in Dymer destroyed (AP) — now leads as the third hero. The COP31 hero is redrawn in full and carries the deal itself: fossil fuels not named, the $120bn adaptation target dropped, the 35% clean-power goal kept, adoption not yet confirmed. The Bahrain hero is framed as a claim: Iran says two US Patriot radars were hit; Bahrain denies it. Every card names its own outlet, no generic wire label anywhere, and the Middle East share is cut to 8 of 35. The page keeps the structural ideas the top 10 proved in this edition: a verification layer (every story stamped CONFIRMED, OFFICIAL, REPORTED or CLAIM, with a HOW WE CHECKED legend), a "SUNDAY IN UTC" time strip, a BY THE NUMBERS strip opening with 186 drones fired, and a two-column DATE CHECK that names what was left out as earlier days' news and what was not confirmed when drawn (wires read to 00:15 UTC, 23 November).
 
 ## Run it
 
@@ -12,7 +12,7 @@
 node main.ts
 ```
 
-`main.ts` verifies the poster (a genuine 1024×1024 PNG under the 1 MiB cap, complete to its IEND chunk, matching the pinned sha256) and copies it to `$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output`). The poster itself was drawn by `draw_poster_r2.py` (Python + Pillow, no network); running it twice produces byte-identical output.
+`main.ts` checks the poster — a real 1024×1024 PNG under the 1 MiB cap, complete to its IEND chunk, matching the pinned sha256 — then copies it to `$MAKEFUN_OUTPUT_DIR/entry.png` (default `/output`). The poster was drawn by `draw_poster_r2.py` (Python + Pillow, no network); drawing it twice gives byte-identical output.
 
 ---
 
@@ -24,7 +24,7 @@ This repository is the entry for the [news-image-20261122](https://make.fun/boun
 
 ## The thirty-five stories (all first reported Sunday 22 November 2026)
 
-The page is a classic cream broadsheet: a giant serif masthead naming the date, a red-italic subhead naming the three heroes, a BY THE NUMBERS strip opening with 186 drones fired, a "SUNDAY IN UTC" time strip, a region bar that sums to 35, three illustrated hero panels with code-drawn scenes, twelve numbered feature cards with small pictograms, a drawn world map with numbered pins, an ALSO ON list of 20 more stories, a two-column DATE CHECK box, and a HOW WE CHECKED legend. Every story carries a verification stamp, and every card names its own outlet.
+A classic cream broadsheet: a giant serif masthead naming the date, a red-italic subhead naming the three heroes, a BY THE NUMBERS strip opening with 186 drones fired, a "SUNDAY IN UTC" time strip, a region bar that sums to 35, three illustrated hero panels with code-drawn scenes, twelve numbered feature cards with small pictograms, a drawn world map with numbered pins, an ALSO ON list of 20 more stories, a two-column DATE CHECK box, and a HOW WE CHECKED legend. Every story carries a verification stamp, and every card names its own outlet.
 
 **The three heroes**
 
