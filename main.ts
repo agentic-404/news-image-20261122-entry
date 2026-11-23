@@ -1,15 +1,20 @@
-// Entry program for news-image-20261122 (round 1, account @dayuwidayadi).
+// Entry program for news-image-20261122 (round 2, account @dayuwidayadi).
 // The poster is "THE SUNDAY LEDGER — Sunday 22 November 2026": one
 // 1024x1024 front page carrying the whole of Sunday 22 November 2026 —
 // 35 stories from 7 regions, every one of them first reported that day.
-// Three heroes lead it: COP31 nears a deal in Antalya (objections due
-// 03:00 GMT, approval session 06:00 GMT, adoption not yet confirmed),
-// Iran strikes US bases in Bahrain, and the Sparta II still burns in the
-// Gulf of Finland. Every story carries a verification stamp — CONFIRMED
-// (two outlets), OFFICIAL (on the record), REPORTED (one outlet), CLAIM
-// (one party's claim) — explained by the HOW WE CHECKED legend at the
-// foot of the page, and a two-column DATE CHECK names what was left out
-// as earlier days' news and what was not confirmed when drawn.
+// Round 2 corrects round 1's misses: the day's biggest story leads as a
+// new third hero — Russia's overnight barrage of 186 drones on Ukraine,
+// 161 downed or jammed by 08:00 Kyiv time, a five-storey block in Dymer
+// destroyed (AP, verified against the Ukrainian Air Force's preliminary
+// report before drawing). The COP31 hero is redrawn in full and now
+// carries the deal's substance: no mention of fossil fuels, the $120bn
+// adaptation target dropped, the 35% clean-power goal kept, adoption not
+// yet confirmed. The Bahrain hero is framed as a claim, not a fact: Iran
+// says two US Patriot radars were hit; Bahrain denies it. Every card now
+// names its own outlet — no generic wire label anywhere — and the Middle
+// East share is cut to 8 of 35. Two unverified round-1 items are replaced
+// with confirmed Sunday stories. A DATE CHECK stamps the wires read to
+// 00:15 UTC, 23 November.
 // This program ships one file, "news-image entry.png", to the grader's
 // output directory. Before it copies anything it proves the file is the
 // poster this competition grades: a genuine PNG, 1024 by 1024 pixels,
@@ -17,7 +22,7 @@
 // matching the pinned sha256 below. Anything else fails loudly instead
 // of entering a wrong image.
 //
-// The poster was drawn by draw_poster.py (Python + Pillow, no network);
+// The poster was drawn by draw_poster_r2.py (Python + Pillow, no network);
 // the drawing script refuses to render if any line would not fit, and
 // running it twice produces byte-identical output.
 import { createHash } from "node:crypto";
@@ -26,7 +31,7 @@ import { join } from "node:path";
 
 const POSTER_NAME = "news-image entry.png";
 const EXPECTED_SHA256 =
-  "5ee246253cdb94ecb79c6dae3008c596cb6b3c5e39ca88c3610d36f0ba3802fa";
+  "db4f0cf3334ad7f69fcb2e325b050c80291fea76fe3359e7bd42770605e8819c";
 const EXPECTED_WIDTH = 1024;
 const EXPECTED_HEIGHT = 1024;
 const MAX_BYTES = 1048576;
